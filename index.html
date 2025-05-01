@@ -137,38 +137,33 @@
     <script>
     const portfolioItems = [
   {
-    src: "https://www.w3schools.com/w3images/wedding.jpg",
-    name: "Sara Lamalo",
-    date: "20 July 2022",
-    label: "Wedding"
+    src: "images/wall.jpg",
+
+    date: "20 July 2020",
+    label: "Abstract"
   },
   {
     src: "https://www.w3schools.com/w3images/rocks.jpg",
-    name: "James Roy",
     date: "05 June 2022",
     label: "Nature"
   },
   {
     src: "https://www.w3schools.com/w3images/falls2.jpg",
-    name: "Lena D.",
     date: "14 March 2022",
     label: "Adventure"
   },
   {
     src: "https://www.w3schools.com/w3images/paris.jpg",
-    name: "Clara Vue",
     date: "10 May 2023",
     label: "Travel"
   },
   {
     src: "https://www.w3schools.com/w3images/underwater.jpg",
-    name: "Kyle Shimmer",
     date: "02 August 2022",
     label: "Underwater"
   },
   {
     src: "https://www.w3schools.com/w3images/ocean.jpg",
-    name: "Nina Blake",
     date: "22 September 2022",
     label: "Ocean"
   }
@@ -183,7 +178,7 @@ portfolioItems.forEach(item => {
     <img src="${item.src}" alt="${item.label}" class="absolute inset-0 w-full h-full object-cover z-0" oncontextmenu="return false;">
     <div class="relative z-10 m-4 bg-white/30 backdrop-blur-md rounded-xl px-4 py-3 flex justify-between items-center shadow-md">
       <div>
-        <h3 class="text-gray-800 font-semibold text-sm">${item.name}</h3>
+
         <p class="text-xs text-gray-700">${item.date}</p>
       </div>
       <span class="text-gray-800 text-sm font-semibold">${item.label}</span>
