@@ -13,12 +13,12 @@
 <body class="bg-gray-100">
     <nav class="bg-white px-4 py-4 shadow-md">
         <div class="flex items-center justify-between max-w-6xl mx-auto">
-            <!-- Brand Name -->
+            
             <div class="text-xl font-bold text-gray-800">
                 U5 Photo
             </div>
 
-            <!-- Menu Toggle (Visible on small screens) -->
+            <!-- Menu Toggle -->
             <button class="menu-toggle block sm:hidden"
                 onclick="document.querySelector('.menu-links').classList.toggle('active')">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -66,22 +66,22 @@
     <section id="about" class="max-w-4xl mx-auto px-4 py-12">
         <div class="bg-white rounded-lg shadow-md p-6 text-center">
             <h3 class="text-2xl font-bold mb-4">About Me</h3>
-            <p class="text-gray-600">Hi I'm Utkaarsh Saha, a hobbyist photographer specializing in nature and
+            <p class="text-gray-600">Hi I'm Utkaarsh Saha, a hobby photographer specializing in nature and
                 urban photography. I aim to capture the story in every frame and bring emotions to life through my lens.
-                I enjoy
-                this hobby of mine, and its time I shared it too.
+                I enjoy this hobby of mine, and its time I shared it too.
             </p>
         </div>
     </section>
 
     <!-- Portfolio Section -->
     <div id="portfolio" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Images will be injected here by JS -->
+        <h3 class="text-2xl font-bold mb-4">Gallery</h3>
+        <!-- Images injected here by JS -->
     </div>
 
 
     <script>
-        // Carousel logic (auto-scroll)
+        // Carousel logic
         const carousel = document.querySelector('.carousel');
         let index = 0;
         setInterval(() => {
@@ -119,7 +119,7 @@
         document.addEventListener('dragstart', event => event.preventDefault());
     </script>
     <script>
-        // Optional: Toggle menu with Enter key (accessibility)
+        
         document.querySelector('.menu-toggle').addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 document.querySelector('.menu-links').classList.toggle('active');
